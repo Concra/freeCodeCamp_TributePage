@@ -1,0 +1,93 @@
+#title {
+    font-family: sans-serif;
+    font-size: 5vw;
+    grid-area: header;
+  }
+  
+  #mleft {
+    grid-area: mleft;
+  }
+  
+  #mright {
+    grid-area: mright;
+  }
+  
+  #main {
+    background-color: darkgray;
+    padding: 0% 5% 0% 5%;
+    text-align: center;
+    display: grid;
+    grid-row-gap: 5px;
+    grid-template-columns: 10% auto 10%;
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
+      "mleft header mright"
+      "mleft image mright"
+      "mleft info mright"
+      "mleft footer mright"
+      "mleft sources mright";
+  }
+  
+  #img-div {
+    grid-area: image;
+  }
+  
+  #img-caption {
+    font-family: sans-serif;
+    font-size: 3vw;
+  }
+  
+  #image {
+    width: 100%;
+    max-width: 613px;
+    max-height: auto;
+    display: block;
+    margin: auto;
+  }
+  
+  #tribute-info {
+    grid-area: info;
+    font-size: 4vw;
+    justify-self: center;
+    text-align: left;
+    line-height: 1.75;
+    font-family: sans-serif;
+  }
+  
+  #tribute-link {
+    grid-area: footer;
+    font-size: 3vw;
+  }
+  
+  #tribute_footer {
+    grid-area: footer;
+  }
+  
+  
+  #sources {
+    font-family: sans-serif;
+    font-size: 2.5vw;
+    grid-area: sources;
+  }
+  
+  @media (min-width: 500px){
+    #img-caption {
+      font-size: 15px;
+    }
+    
+    #tribute-info {
+      font-size: 20px;
+    }
+    
+    #tribute-link {
+      font-size: 15px;
+    }
+    
+    #tribute_footer {
+      font-size: 15px;
+    }
+    
+    #sources {
+      font-size: 12.5px;
+    }
+  }
